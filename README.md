@@ -1,2 +1,2 @@
-# godot-pong
+# godot-pong [6-s]
 
