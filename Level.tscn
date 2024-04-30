@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgwhrl5sd5822"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6txkr"]
+size = Vector2(1920, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s5fqt"]
+size = Vector2(50, 1080)
+
+[node name="Level" type="Node2D"]
+
+[node name="ParedSuperior" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedSuperior"]
+position = Vector2(960, -25)
+shape = SubResource("RectangleShape2D_6txkr")
+
+[node name="ParedInferior" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedInferior"]
+position = Vector2(960, 1105)
+shape = SubResource("RectangleShape2D_6txkr")
+
+[node name="ArcoPlayer" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArcoPlayer"]
+position = Vector2(-25, 540)
+shape = SubResource("RectangleShape2D_s5fqt")
+
+[node name="ArcoOponente" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArcoOponente"]
+position = Vector2(1945, 540)
+shape = SubResource("RectangleShape2D_s5fqt")
