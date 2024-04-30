@@ -1,2 +1,2 @@
-# godot-pong [6-s]
+# godot-pong [main]
 
